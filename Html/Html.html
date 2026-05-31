@@ -2,10 +2,119 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Первая страница</title>
+    <title>Чеснаков Денис gitHub</title>
 </head>
 <body>
-<h1>Заголовок1</h1>
+<h1>Мой репозиторий по ООП</h1>
+<a href="https://github.com/chesnakov2002/chesnakovOOPJava.git">Репозиторий Чеснаков Денис ООП</a>
+
 <p></p>
+
+<form onsubmit="window.open('https://github.com/chesnakov2002/chesnakovOOPJava/tree/master/' + this.taskName.value); return false;">
+
+    <label>Введите название задачи:
+        <input type="text" name="taskName" placeholder="Название">
+    </label>
+    <button type="submit">Поиск</button>
+</form>
+
+<h2>Вопросы по задачам:</h2>
+
+<form action="/test" method="post">
+
+    <label>Выберите работу, которую посмотрели и оцените ее:
+        <br>
+        <br>
+        <select name="taskName" multiple>
+            <option>ArrayList</option>
+            <option>HashTable</option>
+            <option>List</option>
+            <option>Range</option>
+            <option>Shapes</option>
+            <option>Vector</option>
+        </select>
+
+        <select name="taskRating" style="vertical-align: top;">
+            <option disabled selected>Выберите оценку</option>
+            <option>1(ужасно)</option>
+            <option>2(плохо)</option>
+            <option>3(пойдет)</option>
+            <option>4(хорошо)</option>
+            <option>5(отлично)</option>
+        </select>
+    </label>
+
+    <br>
+    <br>
+
+    <label>
+        <input type="radio" name="syntaxQuality" value="good"> Хороший синтаксис
+    </label>
+
+    <label>
+        <input type="radio" name="syntaxQuality" value="bad"> Плохой синтаксис
+    </label>
+
+    <br>
+
+    <label>
+        <input type="radio" name="nameQuality" value="good"> Хорошее название переменных
+    </label>
+
+    <label>
+        <input type="radio" name="nameQuality" value="terrible"> Ужасное название переменных
+    </label>
+
+    <br>
+    <br>
+
+    <p>Какие принципы SOLID соблюдены:</p>
+
+    <label>
+        <input type="checkbox" name="principle" value="Single Responsibility"> Single Responsibility
+    </label>
+
+    <br>
+
+    <label>
+        <input type="checkbox" name="principle" value="Open/Closed"> Open/Closed
+    </label>
+
+    <br>
+
+    <label>
+        <input type="checkbox" name="principle" value="Liskov Substitution"> Liskov Substitution
+    </label>
+
+    <br>
+
+    <label>
+        <input type="checkbox" name="principle" value="Interface Segregation"> Interface Segregation
+    </label>
+
+    <br>
+
+    <label>
+        <input type="checkbox" name="principle" value="Dependency Inversion"> Dependency Inversion
+    </label>
+
+    <br>
+    <br>
+
+    <div>
+        <label>Напишите развернутый комментарий
+            <br>
+            <textarea name="comment" placeholder="Комментарий"></textarea>
+        </label>
+    </div>
+
+    <button type="submit">Отправить</button>
+</form>
+
+<h2>Полезная информация:</h2>
+<p>
+    <a href="http://localhost:63342/chesnakovWeb/Html/Html2.html?_
+ijt=q8m2p27i3rvpfgfku3hioq3tg1&_ij_reload=RELOAD_ON_SAVE">Таблица "Принципы SOLID"</a>
+</p>
 </body>
 </html>

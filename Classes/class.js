@@ -9,7 +9,7 @@ class Animal {
 }
 
 class Cat extends Animal {
-  constructor(name) {
+  constructor(name) { //конструктор можно вообще не писать
     super(name);
   }
 
@@ -19,7 +19,7 @@ class Cat extends Animal {
 }
 
 class Dog extends Animal {
-  constructor(name) {
+  constructor(name) { //конструктор можно вообще не писать
     super(name);
   }
 

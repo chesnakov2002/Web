@@ -7,6 +7,7 @@ async function loadJsonData() {
     if (!response.ok) {
       throw new Error(`Ошибка статуса: ${response.status}`);
     }
+      
     let jsonData = await response.json();
     console.log(jsonData);
   } catch (error) {
